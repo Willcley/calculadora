@@ -13,8 +13,9 @@ body {
 
 main > section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     background-color: #00000080;
     padding: 25px;
@@ -24,15 +25,31 @@ main > section {
     box-shadow: -6px -6px #00000060 inset;
 }
 
+main > section > h2 {
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+}
+
+main > section > #resultado {
+    background-color: #ecf4ffd0;
+    color: #000;
+    padding: 6px;
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+}
+
 main > section > table {
     width: 100%;
-    height: 450px;
+    max-height: 450px;
 }
 
 tr {
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    max-height: 80px;
 }
 
 button {
@@ -43,10 +60,18 @@ button {
     font-size: 32px;
     border: none;
     border-radius: 12px;
+    box-shadow: -6px -6px #00000060 inset;
 }
 
 button:hover {
     cursor: pointer;
+    padding: 2px 0 0 2px;
+    box-shadow: -4px -4px #00000060 inset;
+}
+
+button:active {
+    padding: 5px 0 0 5px;
+    box-shadow: -1px -1px #00000060 inset;
 }
 
 /* Rodapé */
