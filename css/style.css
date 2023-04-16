@@ -5,8 +5,41 @@ body {
     flex-direction: column;
     background: linear-gradient(0deg, #000000, #404080);
     color: #ecf4ff;
+    padding: 0;
+    margin: 0;
     width: 100vw;
     height: 100vh;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 12px;
+    width: 98%;
+}
+
+header > button {
+    background-color: #00000040;
+    color: #ecf4ff;
+    padding: 8px;
+    margin: 6px;
+    font-size: 16px;
+    border: 8px double #ecf4ff80;
+    border-radius: 40px;
+    box-shadow: 0 0 20px #00000080;
+}
+
+header > button:hover {
+    cursor: pointer;
+    border: 8px double #ecf4ffd0;
+}
+
+header > button:active {
+    color: #ecf4ff80;
+    border: 8px double #ecf4ff40;
 }
 
 /* Principal */
@@ -52,7 +85,7 @@ tr {
     max-height: 80px;
 }
 
-button {
+main button {
     background-color: #00000040;
     color: #ecf4ff;
     width: 80px;
@@ -63,13 +96,13 @@ button {
     box-shadow: -6px -6px #00000060 inset;
 }
 
-button:hover {
+main button:hover {
     cursor: pointer;
     padding: 2px 0 0 2px;
     box-shadow: -4px -4px #00000060 inset;
 }
 
-button:active {
+main button:active {
     padding: 5px 0 0 5px;
     box-shadow: -1px -1px #00000060 inset;
 }
